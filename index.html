@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Subrat Kumar Jena</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient background */
+            color: white;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(145deg, #6a5acd, #836fff); /* Purple gradient */
+            border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+            transform: scale(1.1);
+        }
+
+        nav a::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ffeb3b;
+            transition: width 0.3s;
+            margin: 0 auto;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #ffeb3b;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #1e3c72, #2a5298); /* Blue gradient for card */
+            padding: 30px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            color: #ffeb3b;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-top: 15px;
+            color: #dcdcdc;
+        }
+
+        footer {
+            padding: 30px 20px;
+            background: linear-gradient(145deg, #6a5acd, #836fff); /* Purple gradient for footer */
+            text-align: center;
+            color: white;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* New Section Backgrounds */
+        #education {
+            background: linear-gradient(145deg, #ffafbd, #ffc3a0); /* Soft Pink Gradient */
+        }
+
+        #skills {
+            background: linear-gradient(145deg, #3b9ff3, #7fc6fd); /* Sky Blue Gradient */
+        }
+
+        #projects {
+            background: linear-gradient(145deg, #00b09b, #96c93d); /* Teal Gradient */
+        }
+
+        #internship {
+            background: linear-gradient(145deg, #f7c8ff, #e7a9ea); /* Soft Lavender Gradient */
+        }
+
+        #certifications {
+            background: linear-gradient(145deg, #fc00ff, #00dbde); /* Neon Gradient */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Subrat Kumar Jena</h1>
+        <p>Passionate Developer | Cybersecurity Enthusiast</p>
+      
+    </header>
+
+    <section id="education">
+        <div class="section-title">Education</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>C.V Raman Global University</h3>
+                <p>B-Tech (Computer Science & Engineering) - (2022-2026)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">Skills</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Python, Bash, SQL</p>
+            </div>
+            <div class="card">
+                <h3>Tools</h3>
+                <p>VS Code, Postman, Burpsuite Pro, Metasploit</p>
+            </div>
+            <div class="card">
+                <h3>Technologies</h3>
+                <p>Linux, AWS, OSINT, GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-title">Projects</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Network Sniffer</h3>
+                <p>Python, Scapy, SQLite, Matplotlib</p>
+            </div>
+            <div class="card">
+                <h3>Password Stealer Malware</h3>
+                <p>.NET, P/Invoke, Windows API</p>
+            </div>
+            <div class="card">
+                <h3>Certificate Verification System</h3>
+                <p>Flask, MySQL, Cryptography</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="internship">
+        <div class="section-title">Internship</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>CyberSecureIndia</h3>
+                <p>Penetration Tester - Web Application Pentesting, OSINT</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="section-title">Certifications</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>OPSWAT ONSA</h3>
+            </div>
+            <div class="card">
+                <h3>IEEE Research on Zero-Day Exploits</h3>
+            </div>
+            <div class="card">
+                <h3>ArcX-CTI101</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Subrat Kumar Jena. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
